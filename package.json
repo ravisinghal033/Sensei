@@ -2,9 +2,9 @@
   "name": "ai-career-coach",
   "version": "0.1.0",
   "private": true,
-   "scripts": {
+  "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next lint --max-warnings 0 || exit 0",  
+    "build": "next build && next lint --max-warnings 0 || exit 0",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate"
@@ -32,7 +32,7 @@
     "html2pdf.js": "^0.10.2",
     "inngest": "^3.29.3",
     "lucide-react": "^0.471.1",
-    "next": "15.1.4",
+    "next": "15.1.11",
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -53,5 +53,4 @@
     "prisma": "^6.3.0",
     "tailwindcss": "^3.4.1"
   }
-  
 }
