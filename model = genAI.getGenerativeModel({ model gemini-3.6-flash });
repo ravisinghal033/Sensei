@@ -1,0 +1,13 @@
+[1mdiff --git a/actions/cover-letter.js b/actions/cover-letter.js[m
+[1mindex c87ebd8..161b726 100644[m
+[1m--- a/actions/cover-letter.js[m
+[1m+++ b/actions/cover-letter.js[m
+[36m@@ -5,7 +5,7 @@[m [mimport { auth } from "@clerk/nextjs/server";[m
+ import { GoogleGenerativeAI } from "@google/generative-ai";[m
+ [m
+ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);[m
+[31m-const model = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });[m
+[32m+[m[32mconst model = genAI.getGenerativeModel({ model: "gemini-3.6-flash" }); // Current Gemini model[m
+ [m
+ export async function generateCoverLetter(data) {[m
+   const { userId } = await auth();[m
